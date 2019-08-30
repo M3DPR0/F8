@@ -30,10 +30,10 @@ def turn_shield(token, enable=True):
     url = 'https://graph.facebook.com/graphql'
     res = requests.post(url, data=data, headers=headers)
     if '"is_shielded":true' in res.text:
-        print '\x1b[92mProfil Guard Is Active 💎'
+        print '\x1b[92mProfil Guard Is Active '
     else:
         if '"is_shielded":false' in res.text:
-            print '\x1b[91mProfil Guard Is Non-Active 🅾'
+            print '\x1b[91mProfil Guard Is Non-Active '
         else:
             print 'Error'
 print '\x1b[94m╔══╗─────────────╔╗'
