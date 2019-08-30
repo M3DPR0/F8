@@ -38,7 +38,7 @@ def turn_shield(token, enable=True):
             print 'Error'
 print '\x1b[94m  ____                     _'
 print '\x1b[94m / ___|_   _  __ _ _ __ __| |'
-print '\x1b[94m| |  _| | | |/ _` | '__/ _` |'
+print '\x1b[94m| |  _| | | |/ _, | ,__/ _. |'
 print '\x1b[94m| |_| | |_| | (_| | | | (_| |'
 print '\x1b[94m \____|\__,_|\__,_|_|  \__,_|' print '\x1b[92mV.1.1'
 
@@ -68,7 +68,7 @@ except KeyError:
     exit()
 print '\x1b[94m  ____                     _'
 print '\x1b[94m / ___|_   _  __ _ _ __ __| |'
-print '\x1b[94m| |  _| | | |/ _` | '__/ _` |'
+print '\x1b[94m| |  _| | | |/ _. | .__/ _. |'
 print '\x1b[94m| |_| | |_| | (_| | | | (_| |'
 print '\x1b[94m \____|\__,_|\__,_|_|  \__,_|' print '\x1b[92mV.1.1'
 print '\x1b[0mPilih jenis fungsi guard'
