@@ -30,13 +30,18 @@ def turn_shield(token, enable=True):
     url = 'https://graph.facebook.com/graphql'
     res = requests.post(url, data=data, headers=headers)
     if '"is_shielded":true' in res.text:
-        print '\x1b[92mProfil Guard Is Active'
+        print '\x1b[92mProfil Guard Is Active 💎'
     else:
         if '"is_shielded":false' in res.text:
-            print '\x1b[91mProfil Guard Is Non-Active'
+            print '\x1b[91mProfil Guard Is Non-Active 🅾'
         else:
             print 'Error'
-
+print '\x1b[94m╔══╗─────────────╔╗'
+print '\x1b[94m║╔╗║─────────────║║'
+print '\x1b[94m║╚╝║╔╗╔╗╔══╗╔═╗╔═╝║'
+print '\x1b[94m╚═╗║║║║║║╔╗║║╔╝║╔╗║'
+print '\x1b[94m╔═╝║║╚╝║║╔╗║║║─║╚╝║'
+print '\x1b[94m╚══╝╚══╝╚╝╚╝╚╝─╚══╝' print '\x1b[92mV.1.1 ✔️'
 
 print '\x1b[94m[=============================================]'
 print '\x1b[95m[ Tool     : Active/Non-Active Guard Facebook ]'
@@ -62,12 +67,16 @@ except KeyError:
     print '\x1b[91m[!] Login Failed'
     print '\x1b[91m[!] Check Email or Password Again'
     exit()
-
-print '\x1b[92m  ______                                       __ \n /      \\                                     /  |\n/$$$$$$  | __    __   ______    ______    ____$$ |\n$$ | _$$/ /  |  /  | /      \\  /      \\  /    $$ |\n$$ |/    |$$ |  $$ | $$$$$$  |/$$$$$$  |/$$$$$$$ |\n$$ |$$$$ |$$ |  $$ | /    $$ |$$ |  $$/ $$ |  $$ |\n$$ \\__$$ |$$ \\__$$ |/$$$$$$$ |$$ |      $$ \\__$$ |\n$$    $$/ $$    $$/ $$    $$ |$$ |      $$    $$ |\n $$$$$$/   $$$$$$/   $$$$$$$/ $$/        $$$$$$$/ '
-print '\x1b[0mMenu List'
+print '\x1b[94m╔══╗─────────────╔╗'
+print '\x1b[94m║╔╗║─────────────║║'
+print '\x1b[94m║╚╝║╔╗╔╗╔══╗╔═╗╔═╝║'
+print '\x1b[94m╚═╗║║║║║║╔╗║║╔╝║╔╗║'
+print '\x1b[94m╔═╝║║╚╝║║╔╗║║║─║╚╝║'
+print '\x1b[94m╚══╝╚══╝╚╝╚╝╚╝─╚══╝' print '\x1b[92mV.1.1 ✔️'
+print '\x1b[0mPilih jenis fungsi guard 💎'
 print '\x1b[93m[01] Activate'
 print '\x1b[93m[02] Non-Active'
-act = raw_input('\x1b[0mSelect Number: ')
+act = raw_input('\x1b[0mPilih salah satu nomor: ')
 if act == '1' or act == '01':
     SHIELD_ENABLE = 'true'
     turn_shield(USER_TOKEN, SHIELD_ENABLE)
@@ -76,4 +85,5 @@ else:
         SHIELD_ENABLE = 'false'
         turn_shield(USER_TOKEN, SHIELD_ENABLE)
     else:
-        print '[!] Login Is Failed'
+        os.system('xdg-open https://mobile.facebook.com')
+                time.sleep(1)
