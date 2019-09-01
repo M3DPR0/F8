@@ -141,7 +141,8 @@ def welcome():
         print " "
         print GL+" [*] Crack Akun : {}".format(email)
         print RR+" [*] Password Terbaca :" , len(total),WW+ "passwords"
-	 runntek(RR+" Sedang memulai ...")
+	print " "
+	runntek(RR+" Sedang memulai ...")
         time.sleep(1)
 
 if __name__ == '__main__':
