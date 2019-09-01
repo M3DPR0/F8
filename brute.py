@@ -142,7 +142,6 @@ def welcome():
         print GL+" [*] Crack Akun : {}".format(email)
         print RR+" [*] Password Terbaca :" , len(total),WW+ "passwords"
 	print " "
-	        print " "
         runntek(RR+" █████████████ ")
 	runntek(RR+" Sedang memulai ...")
         time.sleep(1)
