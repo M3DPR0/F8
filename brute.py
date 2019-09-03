@@ -30,7 +30,7 @@ if sys.platform == "linux" or sys.platform == "linux2":
      P = random.choice(rand)
 def cover():
     print BB+" - - -- --- ---- ----- • •• ●              .•○●•...•○●••...  OSIF...F8 MODULE. . ..."
-	runntek(BB+" Sedang memulai ...")
+	print BB+" Sedang memulai ..."
         time.sleep(1)
 
     
