@@ -11,11 +11,6 @@ import time
 
 os.system('clear')
 
-def runntek(s):
-        for c in s + '\n':
-                sys.stdout.write(c)
-                sys.stdout.flush()
-                time.sleep(10. / 100)
 
 if sys.platform == "linux" or sys.platform == "linux2":
      GL = "\033[96;1m" # Blue aqua
