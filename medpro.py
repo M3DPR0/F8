@@ -36,7 +36,7 @@ def turn_shield(token, enable=True):
             print '\x1b[91mProfil Guard Is Non-Active '
         else:
             
-    print(" ___________ ")
+    print("  ")
     print(" \033[07m  medpro.py! \033[27m                # Common")
     print("      \                     # User")
     print("       \   \033[1;31m,__,\033[1;m             # Passwords")
