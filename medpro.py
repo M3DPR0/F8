@@ -36,13 +36,13 @@ def turn_shield(token, enable=True):
             print '\x1b[91mProfil Guard Is Non-Active '
         else:
             
-    print("  ")
-    print(" \033[07m  medpro.py! \033[27m                # Common")
-    print("      \                     # User")
-    print("       \   \033[1;31m,__,\033[1;m             # Passwords")
-    print("        \  \033[1;31m(\033[1;moo\033[1;31m)____\033[1;m         # Profiler")
-    print("           \033[1;31m(__)    )\ \033[1;m  ")
-    print(
+    
+    print" \033[07m  medpro.py! \033[27m                # Common"
+    print"      \                     # User")
+    print"       \   \033[1;31m,__,\033[1;m             # Passwords"
+    print"        \  \033[1;31m(\033[1;moo\033[1;31m)____\033[1;m         # Profiler")
+    print"           \033[1;31m(__)    )\ \033[1;m  ")
+    print
         "           \033[1;31m   ||--|| \033[1;m\033[05m*\033[25m\033[1;m      [ Muris Kurgas | j0rgan@remote-exploit.org ]"
     )
     print(28 * " " + "[ Mebus | https://github.com/Mebus/]\r\n")
