@@ -40,7 +40,7 @@ def cover():
     
     
      """
-    runntek(BB+"          ███████████████  OSIF...F8 MODULE. . ...")
+    runntek(BB+"         .•○●•...•○●••...  OSIF...F8 MODULE. . ...")
     time.sleep(1)
     print " "
     print RR+"  +============================================+"
@@ -48,7 +48,7 @@ def cover():
     print RR+"  +============================================+"
     print RR+"  |         SCRIPT     : File OSIF             |"
     print RR+"  |         REPOSTORY  : SAN-Brother           |"
-    print RR+"  |         CODER	     : Susanto              |"
+    print RR+"  |         CODER	     : Susanto               |"
     print RR+"  |         PROGRAM    : Versi.1.0.1           |"
     print RR+"  |--------------------------------------------|"
     print RR+"  |     OPEN SOURC INFORMATION FACEBOOK F8     |"
@@ -142,7 +142,7 @@ def welcome():
         print GL+" [*] Crack Akun : {}".format(email)
         print RR+" [*] Password Terbaca :" , len(total),WW+ "passwords"
 	print " "
-        runntek(RR+" █████████████ ")
+        runntek(RR+" - - -- --- ---- ----- • •• ● ")
 	runntek(RR+" Sedang memulai ...")
         time.sleep(1)
 
