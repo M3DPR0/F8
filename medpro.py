@@ -37,18 +37,37 @@ def turn_shield(token, enable=True):
         else:
             
     
-    print" \033[07m  medpro.py! \033[27m                # Common"
-    print"      \                     # User")
-    print"       \   \033[1;31m,__,\033[1;m             # Passwords"
-    print"        \  \033[1;31m(\033[1;moo\033[1;31m)____\033[1;m         # Profiler")
-    print"           \033[1;31m(__)    )\ \033[1;m  ")
-    print
-        "           \033[1;31m   ||--|| \033[1;m\033[05m*\033[25m\033[1;m      [ Muris Kurgas | j0rgan@remote-exploit.org ]"
-    )
-    print(28 * " " + "[ Mebus | https://github.com/Mebus/]\r\n")
+    
+    
+os.system("clear")
 
-
+print colored(" ")
+print colored(" ") 
+print colored('**Tool For TAKE OVER Admin Facebook Group by', 'white', 'on_blue'), colored('WenDev89', 'red', 'on_green'), colored('**to*', 'white', 'on_blue') 
+print colored('MMMMMMMMMMMMMMMMMMMMMMMMM', 'blue'), colored('888888 888888 8888888 8  88888', 'red') 
+print colored('MMMMMMMMMMMMMMMNNmdmmMMMM', 'blue'), colored('8    8 8    8 8  8  8 8  8   8', 'red') 
+print colored('MMMMMMMMMMMMMMo-     mMMM', 'blue'), colored('8eeee8 8e   8 8e 8  8 8e 8e  8', 'red') 
+print colored('MMMMMMMMMMMMMs   .+ooNMMM', 'blue'), colored('88   8 88   8 88 8  8 88 88  8', 'red') 
+print colored('MMMMMMMMMMMMM:   yMMMMMMM', 'blue'), colored('88   8 88   8 88 8  8 88 88  8', 'red') 
+print colored('MMMMMMMMMMsso.   /ossMMMM', 'blue'), colored('88   8 88eee8 88 8  8 88 88  8', 'red') 
+print colored('MMMMMMMMMM          -MMMM', 'blue'), colored('================================', 'white', 'on_blue') 
+print colored('MMMMMMMMMMyyy.   +yydMMMM', 'blue'), colored('888888 88888  888888 8   8 888888', 'red') 
+print colored('MMMMMMMMMMMMM:   hMMMMMMM', 'blue'), colored('8    8 8   8  8    8 8   8 8    8', 'red') 
+print colored('MMMMMMMMMMMMM:   hMMMMMMM', 'blue'), colored('8e     8eee8e 8    8 8e  8 8eeee8', 'red') 
+print colored('MMMMMMMMMMMMM:   hMMMMMMM', 'blue'), colored('88  ee 88   8 8    8 88  8 88', 'red')  
+print colored('MMMMMMMMMMMMM:   hMMMMMMM', 'blue'), colored('88   8 88   8 8    8 88  8 88', 'red')  
+print colored('MMMMMMMMMMMMM:   hMMMMMMM', 'blue'), colored('88eee8 88   8 8eeee8 88ee8 88', 'red')
+print colored('==========================================================', 'white', 'on_blue')
+print colored(" ") 
+print colored('Select a Language :', 'cyan') 
+print colored('Pilih Bahasa :', 'cyan') 
+print(" ")
+print colored('[ 01 ]', 'cyan'), colored('INDONESIA', 'white', 'on_red') 
+print(" ") 
+print colored('[ 02 ]', 'cyan'), colored('ENGLISH', 'white', 'on_blue') 
+print colored(' ')
 def version():
+    
     """Display version"""
 
     print("\r\n	\033[1;31m[ medpro.py! ]  " + __version__ + "\033[1;m\r\n")
