@@ -74,7 +74,7 @@ def login():
         pwd = getpass.getpass('\x1b[1;91m[+] \x1b[1;36mPassword \x1b[1;91m:\x1b[1;92m ')
         tik()
         try:
-            br.open('https://web.facebook.com/login/device-based/regular/login/?login_attempt=1')
+            br.open('https://m.facebook.com/')
         except mechanize.URLError:
             print '\n\x1b[1;91m[!] Tidak Ada Koneksi'
             keluar()
@@ -2192,9 +2192,7 @@ def gaz(toket, enable=True):
         else:
             print '\x1b[1;91m[!] Error'
             keluar()
-def keluar():
-    print '\x1b[1;91m[!] Tutup'
-    os.sys.exit()
+
 
 if __name__ == '__main__':
 	login()
