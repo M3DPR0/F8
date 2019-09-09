@@ -20,10 +20,6 @@ br = mechanize.Browser()
 br.set_handle_robots(False)
 br.set_handle_refresh(mechanize._http.HTTPRefreshProcessor(), max_time=1)
 br.addheaders = [('User-Agent', 'Opera/9.80 (Android; Opera Mini/43.2.2254/140.293; U; id) Presto/2.12.423 Version/12.16')]
-def keluar():
-    print '\x1b[1;91m[!] Tutup'
-    os.sys.exit()
-
 
 def jalan(z):
     for e in z + '\n':
@@ -2196,7 +2192,9 @@ def gaz(toket, enable=True):
         else:
             print '\x1b[1;91m[!] Error'
             keluar()
-
+def keluar():
+    print '\x1b[1;91m[!] Tutup'
+    os.sys.exit()
 
 if __name__ == '__main__':
 	login()
