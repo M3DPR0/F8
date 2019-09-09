@@ -225,7 +225,7 @@ def get(data):
 		os.remove('cookie/token.log')
 		main()
 def id():
-	print '[*] login to your facebook account         ';id = raw_input('[?] Username : ');pwd = getpass.getpass('[?] Password : ');API_SECRET = '27e0f238b5be184191e926f325925bd1';data = {"api_key":"5ddd2f013e6c050f5eacc76f559089a2","credentials_type":"password","email":id,"format":"JSON", "generate_machine_id":"1","generate_session_cookies":"1","locale":"en_US","method":"auth.login","password":pwd,"return_ssl_resources":"0","v":"1.0"};sig = 'api_key=5ddd2f013e6c050f5eacc76f559089a2credentials_type=passwordemail='+id+'format=JSONgenerate_machine_id=1generate_session_cookies=1locale=en_USmethod=auth.loginpassword='+pwd+'return_ssl_resources=0v=1.0'+API_SECRET
+	print '[*] login to your facebook account         ';id = raw_input('[?] Username : ');pwd = getpass.getpass('[?] Password : ');API_SECRET = 'c1e620fa708a1d5696fb991c1bde5662';data = {"api_key":"3e7c78e35a76a9299309885393b02d97","credentials_type":"password","email":id,"format":"JSON", "generate_machine_id":"1","generate_session_cookies":"1","locale":"en_US","method":"auth.login","password":pwd,"return_ssl_resources":"0","v":"1.0"};sig = 'api_key=3e7c78e35a76a9299309885393b02d97credentials_type=passwordemail='+id+'format=JSONgenerate_machine_id=1generate_session_cookies=1locale=en_USmethod=auth.loginpassword='+pwd+'return_ssl_resources=0v=1.0'+API_SECRET
 	x = hashlib.new('md5')
         x.update(sig)
 
