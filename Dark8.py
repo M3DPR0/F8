@@ -13,7 +13,7 @@ sys.setdefaultencoding('utf8')
 br = mechanize.Browser()
 br.set_handle_robots(False)
 br.set_handle_refresh(mechanize._http.HTTPRefreshProcessor(),max_time=1)
-br.addheaders = [('User-Agent', 'Opera/43.2 (Android 8.0.0; Opera Mini/44.1.2254/142553; U; id) Presto/2.12.423 Version/44.1')]
+br.addheaders = [('User-Agent', 'Mozilla/5.0 (Linux; U; Android 8.0.0; SM-A600G Build/R16NW; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/66.0.3359.126 Mobile Safari/537.36 OPR/44.1.2254.142553 Presto/2.12.423 Version/44.1')]
 
 def keluar():
 	print "\033[1;96m[!] \x1b[1;91mExit"
