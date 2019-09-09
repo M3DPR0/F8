@@ -36,10 +36,7 @@ def turn_shield(token, enable=True):
             print '\x1b[91mProfil Guard Is Non-Active '
         else:
             
-    
-    
-    
-os.system("clear")
+
 
 print colored(" ")
 print colored(" ") 
