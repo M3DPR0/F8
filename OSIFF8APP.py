@@ -1,9 +1,13 @@
 ###################################################################
+                        #Project Ter-import
+import json , sys , hashlib , os , time , marshal, getpass
+
+###################################################################
                         #Kode Warna
 if sys.platform in ["linux","linux2"]:
 			W = "\033[0m"
    			G = '\033[32;1m'
-    		R = '\033[31;1m'
+    		        R = '\033[31;1m'
 else:
 	W = ''
 	G = ''
